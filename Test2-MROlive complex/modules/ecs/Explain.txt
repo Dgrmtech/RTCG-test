@@ -1,0 +1,11 @@
+Key Features of the ECS Module
+
+    Cluster Setup:
+        Creates an ECS cluster to manage Fargate tasks.
+
+    Task Definition:
+        Specifies the container image, resource limits, and port mappings for Fargate tasks.
+        Configures IAM roles for secure access to AWS resources.
+
+    Service Management:
+        Deploys tasks within the ECS cluster and integrates with the ALB for traffic routing.

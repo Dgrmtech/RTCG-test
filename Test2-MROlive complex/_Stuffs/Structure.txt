@@ -1,0 +1,23 @@
+/terraform
+├── main.tf                # Root module calling all sub-modules
+├── terraform.tfvars       # Variable values
+├── backend.tf             # Backend configuration (optional, for remote state)
+├── modules/
+│   ├── network/           # Network module (VPC, subnets, NAT, endpoints)
+│   │   ├── main.tf
+│   │   ├── variables.tf
+│   │   ├── outputs.tf
+│   ├── alb/               # ALB module
+│   │   ├── main.tf
+│   │   ├── variables.tf
+│   │   ├── outputs.tf
+│   ├── ecr/               # ECR module
+│   │   ├── main.tf
+│   │   ├── variables.tf
+│   │   ├── outputs.tf
+│   ├── ecs/               # ECS module
+│       ├── main.tf
+│       ├── variables.tf
+│       ├── outputs.tf
+
+
